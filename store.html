@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="https://www.pngitem.com/pimgs/m/370-3701377_kyliejenner-kyliejennerlips-kardashian-lipkit-lipstick-kylie-jenner-lips.png" type="image/icon type">
+<link rel="stylesheet" href="FSP.css">
+<title> TLS </title>
+</head>
+<body>
+
+<header>
+  <h1>Caribbean Khween</h1>
+  <h6><q>Just the Caribbean vibes you need.</q></h6>
+</header>
+
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="store.html">Store</a>
+  <<div class="dropdown">
+    <button class="dropbtn">Staff Members 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="manager.html">Manager</a>
+	  <a href="delivery boy.html">Delivery boy</a>
+	  <a href="vendor1.html">Vendor#1</a>
+	  <a href="vendor2.html">Vendor#2</a>
+    </div>
+  </div> 
+  <a href="subscriptions form.html">Subscriptions Form</a>
+  <a href="about us.html">About Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+   </div>
+                                                                
+  <section>
+  <article>
+  <h2>Online Store</h2>
+  <div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('lipgloss')"> Lipgloss</button>
+  <button class="btn" onclick="filterSelection('scrubs')"> Scrubs</button>
+  <button class="btn" onclick="filterSelection('bundles')"> Bundles</button>
+</div>
+
+<div class="row">
+  <div class="column lipgloss">
+    <div class="content">
+      <img src="https://i.pinimg.com/564x/b2/1d/d4/b21dd4fa00d331bec619d97776221338.jpg" alt="lipgloss" style="width:100%">
+      <h4>Rose Lips</h4>
+      <p>$15</p>
+    </div>
+  </div>
+  <div class="column lipgloss">
+    <div class="content">
+      <img src="https://i.pinimg.com/564x/1a/98/7d/1a987de7e9c7c973d84663ca8a59a972.jpg" alt="lipglos" style="width:100%">
+      <h4>PINK</h4>
+      <p>$12</p>
+    </div>
+  </div>
+  <div class="column lipgloss">
+    <div class="content">
+      <img src="https://i.pinimg.com/564x/bb/62/06/bb6206a38216eb5bb397704c82097a94.jpg" alt="lipgloss" style="width:100%">
+      <h4>Bubble gum</h4>
+      <p>$10</p>
+    </div>
+  </div>
+
+  <div class="column scrubs">
+    <div class="content">
+      <img src="https://i.pinimg.com/564x/61/2c/ed/612ced2cf7d5c568484620a28e60cd2d.jpg" alt="scrubs" style="width:100%">
+      <h4>Blue Berry(lip scrub)</h4>
+      <p>$5</p>
+    </div>
+  </div>
+  <div class="column scrubs">
+    <div class="content">
+      <img src="https://i.pinimg.com/564x/5a/a4/7c/5aa47c5c2631755ed4cd732741fc6f0d.jpg" alt="scrubs" style="width:100%">
+      <h4>Pineapple (lip scrub)</h4>
+      <p>$5</p>
+    </div>
+  </div>
+  <div class="column scrubs">
+    <div class="content">
+      <img src="https://i.pinimg.com/564x/ba/e5/d5/bae5d5e3c461cd2bf45b77002d5f2ed3.jpg" alt="scrubs" style="width:100%">
+      <h4>Grape (lip scrub)</h4>
+      <p>$5</p>
+    </div>
+  </div>
+
+  <div class="column bundles">
+    <div class="content">
+      <img src="https://i.pinimg.com/236x/5a/32/91/5a3291c1898c3c2e9d73db926dcaf64f.jpg" alt="bundles" style="width:100%">
+      <h4>Ms. Perfect</h4>
+      <p>$30</p>
+    </div>
+  </div>
+  <div class="column bundles">
+    <div class="content">
+      <img src="https://i.pinimg.com/564x/26/aa/24/26aa24ed55ac1bb7eefb091a0d7a6c74.jpg" alt="bundles" style="width:100%">
+      <h4>PinK</h4>
+      <p>$30</p>
+    </div>
+  </div>
+  <div class="column bundles">
+    <div class="content">
+      <img src="https://i.pinimg.com/236x/ce/fb/89/cefb89bf6911a2a5177d57f917fcbd1a.jpg" alt="bundles" style="width:100%">
+      <h4>PinK pt2</h4>
+      <p>$30</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+  </article>
+</section>
+
+</body>
+</html>
+
+<footer>
+  <center><p>Contact Us:</p>
+  <p>+501-655-0765</p>
+  <p>IG:CraibbeanKhween</p>
+  <p>caribbeankhween@gmail.com</p>
+  <p>#4 Happy Avenue, Independence Village</p>
+  <p>2021 My Site proudly created by. Kimberly McKoy</p></center>
+</footer>

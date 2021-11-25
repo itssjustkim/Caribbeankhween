@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="https://www.pngitem.com/pimgs/m/370-3701377_kyliejenner-kyliejennerlips-kardashian-lipkit-lipstick-kylie-jenner-lips.png" type="image/icon type">
+<link rel="stylesheet" href="FSP.css">
+<title> TLS </title>
+</head>
+<body>
+
+<header>
+  <h1>Caribbean Khween</h1>
+  <h6><q>Just the Caribbean vibes you need.</q></h6>
+</header>
+
+<div class="topnav">
+  <a href="home.html">Home</a>
+  <a href="store.html">Store</a>
+  <div class="dropdown">
+    <button class="dropbtn">Staff Member 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="manager.html">Manager</a>
+	  <a href="delivery boy.html">Delivery boy</a>
+	  <a href="vendor1.html">Vendor#1</a>
+	  <a href="vendor2.html">Vendor#2</a>
+    </div>
+  </div> 
+  <a href="subscriptions form.html">Subscriptions Form</a>
+  <a href="about us.html">About Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+   </div>
+                                                                
+  <section>
+  <article>
+ 
+  </article>
+</section>
+
+<center>
+	<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="https://i.pinimg.com/564x/59/f2/59/59f25920233f854628edc19756f508fe.jpg" style="width:25%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="https://i.pinimg.com/564x/4b/fe/0d/4bfe0df28dac917ac3629f2dbb250bfd.jpg" style="width:25%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="https://i.pinimg.com/564x/18/97/60/189760273e04ae09090e6abf77c8cd09.jpg" style="width:25%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="https://i.pinimg.com/564x/ca/49/c2/ca49c2491a704a6051b4ebc830cd2110.jpg" style="width:25%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="https://i.pinimg.com/564x/9b/43/05/9b430514e45f081a5cf1c60251a905c5.jpg" style="width:25%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="https://i.pinimg.com/564x/be/5b/d2/be5bd289ca02e440d2d0e5e5464f061a.jpg" style="width:25%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+</center>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</body>
+</html>
+
+<<footer>
+  <center><p>Contact Us:</p>
+  <p>+501-655-0765</p>
+  <p>IG:CraibbeanKhween</p>
+  <p>caribbeankhween@gmail.com</p>
+  <p>#4 Happy Avenue, Independence Village</p>
+  <p>2021 My Site proudly created by. Kimberly McKoy</p></center>
+</footer>
